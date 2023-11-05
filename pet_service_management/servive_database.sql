@@ -118,11 +118,11 @@ INSERT INTO pet (name_pet, weight, descriptions, id_type_pet, id_customer)
 VALUES ('Max', 10, 'Friendly and playful', 1, 1);
 INSERT INTO pet (name_pet, weight, descriptions, id_type_pet, id_customer) 
 VALUES ('Fluffy', 8, 'Loves to cuddle', 2, 2);
+
 INSERT INTO booking (id_pet, id_employee, start_time, end_time, booking_id_status) 
 VALUES ( 1, 1, '2023-11-02 10:00:00', '2023-11-02 12:00:00', 1);
 INSERT INTO booking (id_pet, id_employee, start_time, end_time, booking_id_status) 
 VALUES (2, 1, '2023-11-03 14:00:00', '2023-11-03 16:00:00', 2);
 INSERT INTO detail_service (id_service, id_booking, quantity) VALUES (1, 1, 1);
 INSERT INTO detail_service (id_service, id_booking, quantity) VALUES (2, 2, 1);
-
 
