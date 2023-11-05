@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b90cdca-e581-49d4-a6a0-3fdb3a09f86d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../gioi_thieu_pet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../gioi_thieu_pet/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="5b90cdca-e581-49d4-a6a0-3fdb3a09f86d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +23,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Case-Study_Pet-Store-Management/pet_service_management/service_management"
+    "last_opened_file_path": "F:/Case-Study_Pet-Store-Management/pet_service_management/service"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -38,6 +36,7 @@
       <updated>1698984821849</updated>
       <workItem from="1698984823066" duration="33000" />
       <workItem from="1698993074143" duration="25000" />
+      <workItem from="1699164366426" duration="23000" />
     </task>
     <servers />
   </component>
