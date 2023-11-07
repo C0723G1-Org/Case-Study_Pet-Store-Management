@@ -9,71 +9,75 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Edit pet</title>
 </head>
-<body>
+<body style="background:#e5d8da; height: 100%;">
+
 <center>
-    <h1>Quản lý dịch vụ</h1>
-    <a class="btn btn-success" href="/pet">Trở về danh sách dịch vụ</a>
+    <h1>Chỉnh sửa thú cưng</h1>
+    <hr>
+    <br>
 </center>
+<button style="background: #259425;
+    border: none;box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);">
+    <a style="text-decoration: none; color: white; border: none" href="/pet?action=list.jsp"><< Trở về danh sách Thú cưng</a>
+</button>
 <div align="center">
     <form action="/pet?action=edit" method="/post">
-        <table border="1" cellpadding="5">
+        <table cellpadding="15">
             <caption>
-                <h2>
-                    Chỉnh sửa dịch vụ
-                </h2>
             </caption>
             <c:if test="${pet != null}">
                 <input type="hidden" name="id" value="<c:out value='${pet.id}' />"/>
             </c:if>
-            <tr>
-                <th>Tên dịch vụ:</th>
+            <tr style="background: #5fb4af">
+                <th>Tên thú cưng:</th>
                 <td>
-                    <input type="text" name="name" size="45"
+                    <input style="background: #bdf2ef;border: none;height: 25px" type="text" name="name" size="45"
                            value="<c:out value='${pet.name}' />"
                     />
                 </td>
             </tr>
-            <tr>
+            <tr style="background: #89ded9;">
                 <th>Cân nặng:</th>
                 <td>
-                    <input type="number" name="weight" size="45"
+                    <input style="background: #bdf2ef;border: none;height: 25px" type="number" name="weight" size="45"
                            value="<c:out value='${pet.weight}' />"
                     />
                 </td>
             </tr>
-            <tr>
+            <tr style="background: #5fb4af">
                 <th>Mô tả:</th>
                 <td>
-                    <input type="text" name="descriptions" size="15"
+                    <input style="background: #bdf2ef;border:none;height: 25px" type="text" name="descriptions" size="45"
                            value="<c:out value='${pet.descriptions}' />"
                     />
                 </td>
             </tr>
-            <tr>
-                <th>Mã pet:</th>
+            <tr style="background: #89ded9;">
+                <th>Mã thú cưng:</th>
                 <td>
-                    <input type="number" name="id_type_pet" size="15"
+                    <input style="background: #bdf2ef;border: none;height: 25px" type="number" name="id_type_pet" size="45"
                            value="<c:out value='${pet.id_type_pet}' />"
                     />
                 </td>
             </tr>
-            <tr>
+            <tr  style="background: #5fb4af">
                 <th>Mã khách hàng:</th>
                 <td>
-                    <input type="number" name="id_customer" size="15"
+                    <input style="background: #bdf2ef;border: none;height: 25px" type="number" name="id_customer" size="45"
                            value="<c:out value='${pet.id_customer}' />"
                     />
                 </td>
             </tr>
-            <tr>
+            <tr style="background: #3E7F7A;">
                 <td colspan="2" align="center">
-                    <input type="submit" value="Save"/>
+                    <input style="background: darkgreen;color: white;border: none;box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);" type="submit" value="Save"/>
                 </td>
             </tr>
         </table>
     </form>
 </div>
+
 </body>
 </html>

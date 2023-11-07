@@ -4,13 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156162e5-a3e2-4d01-b650-8744d27696ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/gioi_thieu_pet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gioi_thieu_pet/index.html" afterDir="false" />
+    <list default="true" id="941f0907-736e-496f-96ed-c5feded57bf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pet_service_management/service/src/main/java/com/example/service/config/FilterUTF8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/pet/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/pet/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/pet/src/main/java/com/example/pet/controller/PetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/pet/src/main/java/com/example/pet/controller/PetServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/pet/src/main/java/com/example/pet/repository/impl/PetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/pet/src/main/java/com/example/pet/repository/impl/PetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/pet/src/main/webapp/view/pet/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/pet/src/main/webapp/view/pet/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/pet/src/main/webapp/view/pet/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/pet/src/main/webapp/view/pet/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/pet/src/main/webapp/view/pet/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/pet/src/main/webapp/view/pet/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/build/libs/service-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/build/libs/service-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/service/src/main/webapp/view/service/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/service/src/main/webapp/view/service/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_service_management/servive_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/pet_service_management/servive_database.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Case-Study_Pet-Store-Management/quan_ly_dich_vu_cho_thu_cung",
+    "last_opened_file_path": "F:/Case-Study_Pet-Store-Management/pet_service_management/pet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

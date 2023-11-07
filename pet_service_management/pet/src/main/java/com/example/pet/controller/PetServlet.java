@@ -110,14 +110,14 @@ private IPetService petService= new PetService();
     }
 
     private void updatePet(HttpServletRequest req, HttpServletResponse resp) throws IOException, SQLException {
-        int id = Integer.parseInt(req.getParameter("id"));
-        String name = req.getParameter("name");
-        int price =Integer.parseInt( req.getParameter("weight"));
+        int id = Integer.parseInt(req.getParameter("id_pet"));
+        String name = req.getParameter("name_pet");
+        int weight =Integer.parseInt( req.getParameter("weight"));
         String descriptions = req.getParameter("descriptions");
         int id_type_pet= req.getIntHeader("id_type_pet");
         int id_customer= req.getIntHeader("id_customer");
 
-        Pet pet = new Pet(id, name, price, descriptions,id_type_pet,id_customer);
+        Pet pet = new Pet(id, name, weight, descriptions,id_type_pet,id_customer);
         petService.updatePet(pet);
         resp.sendRedirect("/pet");
 

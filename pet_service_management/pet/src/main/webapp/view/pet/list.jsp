@@ -18,16 +18,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<div>
-    <div class="row pt-5">
+<div style="background: #e5d8da; height: 100%">
+    <div class="row pt-6">
         <h1 style="text-align: center">
-            Quản lý Dịch vụ
+            Quản Lý Thú Cưng
         </h1>
     </div>
+    <hr>
     <div class="d-flex">
         <div class="col-lg-8">
             <div style="padding-left: 5%">
-                <a class="btn btn-success" href="/pet?action=create">Thêm mới</a>
+                <a style="box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);" class="btn btn-success" href="/pet?action=create">Thêm mới</a>
             </div>
 
         </div>
@@ -36,33 +37,38 @@
             <div style="padding-right: 10%">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button style="box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);" class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </div>
     <div class="row p-5">
 
-        <table class="table table-striped">
-            <thead style="background: #efcfd4">
+        <table >
+            <thead style="background-color: #5fb4af">
             <th> STT</th>
             <th> Tên Pet</th>
             <th> Cân nặng</th>
             <th> Mô tả</th>
             <th>Chỉnh sửa</th>
+            <th>Xóa</th>
+
             </thead>
             <tbody>
             <c:forEach var="pet" items="${petList}" varStatus="status">
-                <tr>
+                <tr style="background-color: #8bbebb">
                     <td>${status.count}</td>
                     <td>${pet.getName()}</td>
                     <td>${pet.getWeight()}</td>
                     <td>${pet.getDescriptions()}</td>
                     <td>
-                        <a href="/pet?action=edit&id=${service.getId()}">
-                            <button style="background: red">Edit</button>
+                        <a  href="/pet?action=edit&id=${pet.getId()}" class="btn btn-success">
+                            Edit
                         </a>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="modalDelete('${pet.getId()}','${pet.getName()}')">
+
+                    </td>
+                    <td>
+                        <button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="modalDelete('${pet.getId()}','${pet.getName()}')">
                             Delete
                         </button>
                     </td>

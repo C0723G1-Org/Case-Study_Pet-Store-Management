@@ -10,52 +10,61 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        .input{
+            height: 25px;
+        }
+    </style>
 </head>
-<body>
-<h2 style="text-align: center">Thêm Mới Pet</h2>
-<a style="display: flex;
-  justify-content: center;" href="/pet">Trở về danh sách pet</a>
+<body  style="background:#e5d8da; height: 100%;">
+<h1 style="text-align: center">Thêm Mới Pet</h1>
+    <hr>
+
+<button  style="background: #259425;
+    border: none;box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);">
+    <a style="text-decoration: none; color: white" href="/pet"> << Trở về danh sách pet</a>
+</button>
 <center>
     <table>
         <form action="/pet?action=create" method="post">
-            <table border="1" cellpadding="5">
-                <tr>
+            <table  cellpadding="15">
+                <tr style="background: #5fb4af">
                     <th>Tên pet: </th>
                     <td>
-                        <input type="text" name="name" placeholder="Nhập tên pet" size="45">
+                        <input class="input" type="text" name="name" placeholder="Nhập tên pet" size="45">
                     </td>
                 </tr>
-                <tr>
+                <tr style="background: #89ded9">
                     <th>cân nặng: </th>
                     <td>
-                        <input type="number" name="weight" placeholder="Nhập cân nặng" size="45">
+                        <input class="input" type="number" name="weight" placeholder="Nhập cân nặng" size="45">
                     </td>
 
                 </tr>
-                <tr>
+                <tr style="background: #5fb4af">
                     <th>Mô tả </th>
                     <td>
-                        <input type="text" name="descriptions" placeholder="Nhập mô tả" size="45">
+                        <input class="input" type="text" name="descriptions" placeholder="Nhập mô tả" size="45">
                     </td>
 
                 </tr>
-                <tr>
+                <tr style="background: #89ded9">
                     <th>Mã pet </th>
                     <td>
-                        <input type="number" name="id_type_pet" placeholder="Nhập mã pet" size="45">
+                        <input class="input" type="number" name="id_type_pet" placeholder="Nhập mã pet" size="45">
                     </td>
 
                 </tr>
-                <tr>
+                <tr style="background: #5fb4af">
                     <th>Mã khách hàng </th>
                     <td>
-                        <input type="number" name="id_customer" placeholder="Nhập mã khách hàng" size="45">
+                        <input class="input" type="number" name="id_customer" placeholder="Nhập mã khách hàng" size="45">
                     </td>
 
                 </tr>
-                <tr>
+                <tr style="background: #3E7F7A">
                     <td colspan="2" align="center">
-                        <button type="submit"> Thêm </button>
+                        <button style="background:#006400; border: none; color: white;box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);" type="submit"> Thêm </button>
                     </td>
 
                 </tr>

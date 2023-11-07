@@ -45,7 +45,7 @@ public class PetRepository implements IPetRepository {
 
             while (rs.next()) {
                 String name = rs.getString("name_pet");
-                int weight = Integer.parseInt(rs.getString("weight"));
+                int weight =rs.getInt("weight");
                 String descriptions  = rs.getString("descriptions");
                 int id_type_pet= rs.getInt("id_type_pet");
                 int id_customer= rs.getInt("id_customer");

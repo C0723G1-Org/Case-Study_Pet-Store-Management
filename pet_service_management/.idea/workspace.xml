@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b90cdca-e581-49d4-a6a0-3fdb3a09f86d" name="Changes" comment="" />
+    <list default="true" id="5b90cdca-e581-49d4-a6a0-3fdb3a09f86d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/example/service/config/FilterUTF8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet/src/main/java/com/example/pet/controller/PetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet/src/main/java/com/example/pet/controller/PetServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet/src/main/java/com/example/pet/repository/impl/PetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet/src/main/java/com/example/pet/repository/impl/PetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet/src/main/webapp/view/pet/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/pet/src/main/webapp/view/pet/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet/src/main/webapp/view/pet/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/pet/src/main/webapp/view/pet/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet/src/main/webapp/view/pet/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/pet/src/main/webapp/view/pet/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/libs/service-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/libs/service-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/webapp/view/service/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/webapp/view/service/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servive_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/servive_database.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,14 +39,14 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Case-Study_Pet-Store-Management/pet_service_management/service"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Case-Study_Pet-Store-Management/pet_service_management/pet&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,6 +58,8 @@
       <workItem from="1698984823066" duration="33000" />
       <workItem from="1698993074143" duration="25000" />
       <workItem from="1699164366426" duration="23000" />
+      <workItem from="1699332134298" duration="8000" />
+      <workItem from="1699338538499" duration="11000" />
     </task>
     <servers />
   </component>

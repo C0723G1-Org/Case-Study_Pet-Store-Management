@@ -114,10 +114,12 @@ INSERT INTO customer (name_customer, phone_number, email, address, gender,id_typ
 VALUES ('John Doe', '1234567890', 'john.doe@example.com', '123 Main St', 0,1, 1);
 INSERT INTO customer (name_customer, phone_number, email, address,gender, id_type_customer, id_account) 
 VALUES ('Jane Smith', '9876543210', 'jane.smith@example.com', '456 Elm St',1 ,2, 2);
+
 INSERT INTO pet (name_pet, weight, descriptions, id_type_pet, id_customer) 
 VALUES ('Max', 10, 'Friendly and playful', 1, 1);
 INSERT INTO pet (name_pet, weight, descriptions, id_type_pet, id_customer) 
 VALUES ('Fluffy', 8, 'Loves to cuddle', 2, 2);
+
 
 INSERT INTO booking (id_pet, id_employee, start_time, end_time, booking_id_status) 
 VALUES ( 1, 1, '2023-11-02 10:00:00', '2023-11-02 12:00:00', 1);
