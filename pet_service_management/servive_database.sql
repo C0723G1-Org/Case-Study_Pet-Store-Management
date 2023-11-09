@@ -118,6 +118,8 @@ VALUES ('Jane Smith', '9876543210', 'jane.smith@example.com', '456 Elm St',1 ,2,
 INSERT INTO pet (name_pet, weight, descriptions, id_type_pet, id_customer) 
 VALUES ('Max', 10, 'Friendly and playful', 1, 1);
 INSERT INTO pet (name_pet, weight, descriptions, id_type_pet, id_customer) 
+VALUES ('Min', 10, ' and playful', 2, 2);
+INSERT INTO pet (name_pet, weight, descriptions, id_type_pet, id_customer) 
 VALUES ('Fluffy', 8, 'Loves to cuddle', 2, 2);
 
 

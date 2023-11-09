@@ -1,78 +1,121 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: TGDD
-  Date: 11/5/2023
-  Time: 6:00 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Thêm mới thú cưng</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        .input{
-            height: 25px;
-        }
+
     </style>
 </head>
-<body  style="background:#e5d8da; height: 100%;">
-<h1 style="text-align: center">Thêm Mới Pet</h1>
-    <hr>
+<body>
 
-<button  style="background: #259425;
-    border: none;box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);">
-    <a style="text-decoration: none; color: white" href="/pet"> << Trở về danh sách pet</a>
-</button>
-<center>
-    <table>
-        <form action="/pet?action=create" method="post">
-            <table  cellpadding="15">
-                <tr style="background: #5fb4af">
-                    <th>Tên pet: </th>
-                    <td>
-                        <input class="input" type="text" name="name" placeholder="Nhập tên pet" size="45">
-                    </td>
-                </tr>
-                <tr style="background: #89ded9">
-                    <th>cân nặng: </th>
-                    <td>
-                        <input class="input" type="number" name="weight" placeholder="Nhập cân nặng" size="45">
-                    </td>
+<%--<div>--%>
+<%--    <jsp:include page="../home/navbar.jsp"/>--%>
+<%--    <div class="container">--%>
+<%--        <div class="row mt-5">--%>
 
-                </tr>
-                <tr style="background: #5fb4af">
-                    <th>Mô tả </th>
-                    <td>
-                        <input class="input" type="text" name="descriptions" placeholder="Nhập mô tả" size="45">
-                    </td>
+<%--            <div class="col-lg-9 col-12 right row " id="right">--%>
+<%--                <div>--%>
+<%--                    <h2 class="mb-3 mt-3" style="">Thêm thú cưng</h2>--%>
+<%--                </div>--%>
+<%--                <form method="post">--%>
+<%--                    <div class="border row">--%>
+<%--                        <div class="col-lg-3 col-md-5 col-12 mb-3">--%>
 
-                </tr>
-                <tr style="background: #89ded9">
-                    <th>Mã pet </th>
-                    <td>
-                        <input class="input" type="number" name="id_type_pet" placeholder="Nhập mã pet" size="45">
-                    </td>
+<%--                            <input name="name" class="form-control-plaintext" placeholder="Nhập tên pet"--%>
+<%--                                   size="50"/>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-lg-9 col-md-7 col-12 mb-3">--%>
 
-                </tr>
-                <tr style="background: #5fb4af">
-                    <th>Mã khách hàng </th>
-                    <td>
-                        <input class="input" type="number" name="id_customer" placeholder="Nhập mã khách hàng" size="45">
-                    </td>
+<%--                            <input name="weight" class="form-control-plaintext" placeholder="Nhập cân nặng"--%>
+<%--                                   size="50"/>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                    <div class="border row">--%>
+<%--                        <div class="col-lg-3 col-md-5 col-12 mb-3">--%>
+<%--                            <input name="descriptions" class="form-control-plaintext" placeholder="Nhập mô tả"--%>
+<%--                                   size="50"/>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-lg-9 col-md-7 col-12 mb-3">--%>
 
-                </tr>
-                <tr style="background: #3E7F7A">
-                    <td colspan="2" align="center">
-                        <button style="background:#006400; border: none; color: white;box-shadow: 0px 0px 6px rgba(0, 0, 0, 10);" type="submit"> Thêm </button>
-                    </td>
+<%--                            <input name="id_type_pet" class="form-control-plaintext" placeholder="Nhập mã thú cưng"--%>
+<%--                                   size="50"/>--%>
 
-                </tr>
+<%--                        </div>--%>
+<%--                        <div class="border row" style="position: relative;left: 11px">--%>
+<%--                            <div class="col-lg-3 col-md-5 col-12 mb-3">--%>
+<%--                                <input name="id_customer" class="form-control-plaintext"--%>
+<%--                                       placeholder="Nhập mã khách hàng"--%>
+<%--                                       size="50"/>--%>
+<%--                            </div>--%>
 
-            </table>
 
-        </form>
-    </table>
-</center>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </form>--%>
+<%--                <div class="row mt-2" style="text-align: center">--%>
+<%--                    <div class="col-6">--%>
+<%--                        <a href="/pet" class="btn btn-warning">Quay lại</a>--%>
+<%--                    </div>--%>
+<%--                    <div class="col-6">--%>
+<%--                        <input hidden="hidden" name="role" value="3"/>--%>
+<%--                        <input type="submit" value="Lưu"/>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</div>--%>
+
+<div class="container col-12 main">
+    <div class="table-title">
+        <div class="row">
+            <h2>Thêm mới thú cưng</h2>
+        </div>
+    </div>
+    <form method="post">
+        <div class="mb-4 mt-2 row">
+            <label for="name" class="col-sm-2 col-form-label">Tên thú cưng(<span style="color: red">*</span>)</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+        </div>
+        <div class="mb-4 mt-2 row">
+            <label for="weight" class="col-sm-2 col-form-label">Cân nặng(<span
+                    style="color: red">*</span>)</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="weight" name="weight" required>
+            </div>
+        </div>
+        <div class="mb-4 mt-2 row">
+            <label for="descriptions" class="col-sm-2 col-form-label">Mô tả(<span style="color: red">*</span>)</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="descriptions" name="descriptions" required>
+            </div>
+        </div>
+        <div class="mb-4 mt-2 row">
+            <label for="id_type_pet" class="col-sm-2 col-form-label">Mã thú cưng(<span style="color: red">*</span>)</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="id_type_pet" name="id_type_pet" required>
+            </div>
+        </div>
+
+        <div class="row mt-1 mb-2" style="text-align: center">
+            <div class="col-6">
+                <a href="/service" class="btn btn-warning ">Quay lại</a>
+            </div>
+            <div class="col-6">
+                <button type="submit" class="btn btn-warning ">Thêm</button>
+            </div>
+        </div>
+        <input type="hidden" name="role" value="3">
+        <input type="hidden" name="id" value="${service.getId()}">
+
+    </form>
+</div>
 </body>
 </html>

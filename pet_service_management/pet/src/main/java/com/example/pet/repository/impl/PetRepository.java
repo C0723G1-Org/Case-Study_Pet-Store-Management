@@ -1,5 +1,6 @@
 package com.example.pet.repository.impl;
 
+import com.example.pet.dto.PetDTO;
 import com.example.pet.model.Pet;
 import com.example.pet.repository.BasePetRepository;
 import com.example.pet.repository.IPetRepository;
@@ -12,8 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PetRepository implements IPetRepository {
-    private static final String INSERT_PET_SQL = "INSERT INTO pet (name_pet, weight, descriptions,id_type_pet,id_customer ) VALUES (?, ?,?,?,?)";
-    private static final String SELECT_ALL_PET = "select * from pet where delete_pet=0";
+    private static final String INSERT_PET_SQL = "INSERT INTO pet (name_pet, weight, descriptions,id_type_pet,id_customer ) VALUES (?,?,?,?,?)";
+    private static final String SELECT_ALL_PET = "select p.id_pet, p.name_pet, p.weight, p.descriptions,tp.id_type_pet, tp.name_type_pet, c.id_customer, c.name_customer from pet p join type_pet tp on p.id_type_pet = tp.id_type_pet join customer c on p.id_customer = c.id_customer where delete_pet = 0 ;";
     private static final String SELECT_PET_BY_ID = "select id_pet,name_pet,weight,descriptions,id_type_pet,id_customer from pet where id_pet =?;";
     private static final String DELETE_PET_SQL= "update pet set delete_pet = 1 where id_pet = ?;";
     private static final String UPDATE_PET_SQL = "update pet set name_pet = ?,weight= ?, descriptions =?,id_type_pet=?,id_customer=? where id_pet = ?;";
@@ -27,6 +28,7 @@ public class PetRepository implements IPetRepository {
             preparedStatement.setString(3, pet.getDescriptions());
             preparedStatement.setInt(4,pet.getId_type_pet());
             preparedStatement.setInt(5,pet.getId_customer());
+
 
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -56,8 +58,8 @@ public class PetRepository implements IPetRepository {
     }
 
     @Override
-    public List<Pet> selectAllPet() {
-        List<Pet> petList = new ArrayList<>();
+    public List<PetDTO> selectAllPet() {
+        List<PetDTO> petList = new ArrayList<>();
         try (Connection connection = BasePetRepository.getConnectDB()) {
             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_PET);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -67,9 +69,11 @@ public class PetRepository implements IPetRepository {
                 String name = resultSet.getString("name_pet");
                 int weight = resultSet.getInt("weight");
                 String descriptions  = resultSet.getString("descriptions");
-                int id_type_pet= resultSet.getInt("id_type_pet");
-                int id_customer= resultSet.getInt("id_customer");
-                petList.add(new Pet(id, name,weight, descriptions,id_type_pet,id_customer));
+                int idTypePet= resultSet.getInt("id_type_pet");
+                int idCustomer= resultSet.getInt("id_customer");
+                String nameCustomer = resultSet.getString("name_customer");
+                String typePet = resultSet.getString("name_type_pet");
+                petList.add(new PetDTO(id, name,weight, descriptions,idTypePet,idCustomer,nameCustomer,typePet));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -94,12 +98,15 @@ public class PetRepository implements IPetRepository {
     @Override
     public boolean updatePet(Pet pet) throws SQLException {
         boolean rowUpdated;
-        try (Connection connection = BasePetRepository.getConnectDB(); PreparedStatement statement = connection.prepareStatement(UPDATE_PET_SQL)) {
+        try (Connection connection = BasePetRepository.getConnectDB();
+             PreparedStatement statement = connection.prepareStatement(UPDATE_PET_SQL))
+        {
             statement.setString(1, pet.getName());
             statement.setInt(2, pet.getWeight());
             statement.setString(3, pet.getDescriptions());
             statement.setInt(4, pet.getId_type_pet());
             statement.setInt(5, pet.getId_customer());
+            statement.setInt(6,pet.getId());
 
             rowUpdated = statement.executeUpdate() > 0;
         }

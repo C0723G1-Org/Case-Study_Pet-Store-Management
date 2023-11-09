@@ -1,5 +1,6 @@
 package com.example.pet.repository;
 
+import com.example.pet.dto.PetDTO;
 import com.example.pet.model.Pet;
 
 import java.sql.SQLException;
@@ -10,7 +11,9 @@ public interface IPetRepository {
 
     public Pet selectPet(int id) throws SQLException;
 
-    public List<Pet> selectAllPet();
+//    public List<PetDTOselectAllPet>();
+
+    List<PetDTO> selectAllPet();
 
     public boolean deletePet(int id) throws SQLException;
 

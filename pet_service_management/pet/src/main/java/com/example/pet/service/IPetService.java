@@ -1,5 +1,6 @@
 package com.example.pet.service;
 
+import com.example.pet.dto.PetDTO;
 import com.example.pet.model.Pet;
 
 import java.sql.SQLException;
@@ -10,7 +11,7 @@ public interface IPetService {
 
     public Pet selectPet(int id) throws SQLException;
 
-    public List<Pet> selectAllPet();
+    public List<PetDTO> selectAllPet();
 
     public boolean deletePet(int id) throws SQLException;
 

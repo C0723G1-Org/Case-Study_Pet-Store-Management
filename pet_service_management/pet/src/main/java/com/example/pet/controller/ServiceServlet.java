@@ -125,7 +125,7 @@ public class ServiceServlet extends HttpServlet {
 
     private void insertService(HttpServletRequest req, HttpServletResponse resp) throws SQLException, ServletException, IOException {
         String name= req.getParameter("name");
-        int price= req.getIntHeader("price");
+        int price= Integer.parseInt(req.getParameter("price"));
         String unit= req.getParameter("unit");
         Service newService= new Service(name,price,unit);
         serviceService.insertService(newService);

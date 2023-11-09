@@ -1,5 +1,6 @@
 package com.example.pet.controller;
 
+import com.example.pet.dto.PetDTO;
 import com.example.pet.model.Pet;
 import com.example.pet.service.IPetService;
 import com.example.pet.service.impl.PetService;
@@ -49,7 +50,7 @@ private IPetService petService= new PetService();
     }
 
     private void listPet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Pet> petList = petService.selectAllPet();
+        List<PetDTO> petList = petService.selectAllPet();
         req.setAttribute("petList", petList);
         RequestDispatcher dispatcher = req.getRequestDispatcher("view/pet/list.jsp");
         dispatcher.forward(req,resp);
@@ -110,12 +111,12 @@ private IPetService petService= new PetService();
     }
 
     private void updatePet(HttpServletRequest req, HttpServletResponse resp) throws IOException, SQLException {
-        int id = Integer.parseInt(req.getParameter("id_pet"));
-        String name = req.getParameter("name_pet");
+        int id = Integer.parseInt(req.getParameter("id"));
+        String name = req.getParameter("name");
         int weight =Integer.parseInt( req.getParameter("weight"));
         String descriptions = req.getParameter("descriptions");
-        int id_type_pet= req.getIntHeader("id_type_pet");
-        int id_customer= req.getIntHeader("id_customer");
+        int id_type_pet= Integer.parseInt(req.getParameter("id_type_pet"));
+        int id_customer= Integer.parseInt(req.getParameter("id_customer"));
 
         Pet pet = new Pet(id, name, weight, descriptions,id_type_pet,id_customer);
         petService.updatePet(pet);
@@ -125,10 +126,10 @@ private IPetService petService= new PetService();
 
     private void insertPet(HttpServletRequest req, HttpServletResponse resp) throws IOException, SQLException {
         String name= req.getParameter("name");
-        int weight= req.getIntHeader("weight");
+        int weight= Integer.parseInt(req.getParameter("weight"));
         String descriptions= req.getParameter("descriptions");
-        int id_type_pet= req.getIntHeader("id_type_pet");
-        int id_customer= req.getIntHeader("id_customer");
+        int id_type_pet= Integer.parseInt(req.getParameter("id_type_pet"));
+        int id_customer= Integer.parseInt(req.getParameter("id_customer"));
         Pet newPet= new Pet(name,weight,descriptions,id_type_pet,id_customer);
         petService.insertPet(newPet);
         resp.sendRedirect("/pet");

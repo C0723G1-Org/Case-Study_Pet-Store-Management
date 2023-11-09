@@ -1,5 +1,6 @@
 package com.example.pet.service.impl;
 
+import com.example.pet.dto.PetDTO;
 import com.example.pet.model.Pet;
 import com.example.pet.repository.IPetRepository;
 import com.example.pet.repository.impl.PetRepository;
@@ -22,7 +23,7 @@ public class PetService implements IPetService {
     }
 
     @Override
-    public List<Pet> selectAllPet() {
+    public List<PetDTO> selectAllPet() {
         return petRepository.selectAllPet();
     }
 
