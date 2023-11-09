@@ -110,6 +110,7 @@
               </a>
             </td>
             <td>
+                
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="modalDelete('${service.getId()}','${service.getName()}')">
                 Delete
               </button>
